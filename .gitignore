@@ -1,0 +1,8 @@
+# build output
+bin/
+obj/
+.vs/
+
+# user-specific
+*.user
+*.suo

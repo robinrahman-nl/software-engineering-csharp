@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9_Working_With_Ranges", "9_Working_With_Ranges.csproj", "{17AAA9A6-77A3-4A75-96E9-2A7123A4E029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17AAA9A6-77A3-4A75-96E9-2A7123A4E029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AAA9A6-77A3-4A75-96E9-2A7123A4E029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AAA9A6-77A3-4A75-96E9-2A7123A4E029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AAA9A6-77A3-4A75-96E9-2A7123A4E029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {528FB35C-559A-4F8E-894A-61C52B9A0139}
+	EndGlobalSection
+EndGlobal
