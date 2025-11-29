@@ -1,8 +1,78 @@
-# build output
+#############################
+# .NET / C# Build Output
+#############################
+
 bin/
 obj/
-.vs/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.props
+*.targets
 
-# user-specific
+#############################
+# macOS system junk
+#############################
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+*.icloud
+.Trashes
+.Spotlight-V100
+.fseventsd
+
+#############################
+# VS Code
+#############################
+
+.vscode/
+.history/
+*.code-workspace
+
+#############################
+# JetBrains / Rider
+#############################
+
+.idea/
+*.sln.iml
+
+#############################
+# User-specific files
+#############################
+
 *.user
+*.userosscache
 *.suo
+*.tmp
+*.swp
+*.bak
+
+#############################
+# NuGet
+#############################
+
+*.nupkg
+packages/
+.nuget/
+
+#############################
+# Coverage / Testing
+#############################
+
+coverage/
+*.coverage
+*.coverlet.json
+
+#############################
+# OS-specific
+#############################
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
