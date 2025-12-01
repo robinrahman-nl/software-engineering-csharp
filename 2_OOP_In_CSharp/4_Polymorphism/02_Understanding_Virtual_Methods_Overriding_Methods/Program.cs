@@ -45,7 +45,7 @@ namespace PolymorphismBasics
 {
   public class Employee
   {
-    public void MakeHRRequest()
+    public virtual void MakeHRRequest()
     {
       Console.WriteLine("Employee makes an HR request.");
     }
@@ -53,7 +53,7 @@ namespace PolymorphismBasics
 
   public class Manager : Employee
   {
-    public void MakeHRRequest()
+    public override void MakeHRRequest()
     {
       Console.WriteLine("Manager makes an HR request.");
     }
@@ -61,7 +61,12 @@ namespace PolymorphismBasics
 
   public class Engineer : Employee
   {
-    
+        public override void MakeHRRequest()
+        {
+            Console.WriteLine("Engineer makes an HR request.");
+            
+            
+        }
   }
 
   public class Program
@@ -71,6 +76,9 @@ namespace PolymorphismBasics
       Manager manager1 = new Manager();
       manager1.MakeHRRequest();
 
+      Engineer engineer1 = new Engineer();
+      engineer1.MakeHRRequest();
+      
     }
   }
 }
