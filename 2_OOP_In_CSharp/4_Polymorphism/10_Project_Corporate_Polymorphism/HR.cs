@@ -1,4 +1,4 @@
-public class HR : Employee
+class HR : Employee
 {
     public override void SubmitDailyReport()
     {

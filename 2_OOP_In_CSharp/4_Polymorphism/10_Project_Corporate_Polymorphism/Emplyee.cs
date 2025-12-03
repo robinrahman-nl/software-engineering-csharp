@@ -4,11 +4,11 @@ abstract class Employee
 
  public virtual void Work ()
     {
-        Console.WriteLine("Emplyee is working");
+        Console.WriteLine("Employee is working");
     }
 
     public void ClockIn ()
     {
-        Console.WriteLine("Emplyee clocks in");
+        Console.WriteLine("Employee clocks in");
     }
-}
+} 

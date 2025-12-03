@@ -156,29 +156,122 @@ Feel free to expand the hierarchy by adding more abstract or virtual methods and
 
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace CorporatePolymorphism
 {
+
   class Program
   {
     static void Main(string[] args)
-    { 
+    {
       //*********************************
       //******* Task3 Test Code *********
       //*********************************
-      Employee hrRep = new HR(); // Upcasting 
+      HR hrRep = new HR();
 
       hrRep.ClockIn();
       hrRep.Work();
       hrRep.SubmitDailyReport();
-      Console.WriteLine(); //Line break
+      Console.WriteLine("------------------------------");
       //*********************************
       //******* Task3 Test Code *********
       //*********************************
 
+
+      Employee employee1 = new Engineer();
+      Employee employee2 = new Manager();
+      Employee employee3 = new Intern();
+
+
+
+
+      employee1.SubmitDailyReport();
+      Console.WriteLine("------------------------------");
+      // 7. 8.
+      employee2.ClockIn();
+      employee2.Work();
+      employee2.SubmitDailyReport();
+
+      Console.WriteLine("------------------------------");
+
+      employee3.ClockIn();
+      employee3.Work();
+      employee3.SubmitDailyReport();
+
+      Console.WriteLine("------------------------------");
+
+      // Demonstrating Polymorphism
+
+      // 10. 
+      // Use the as operator to downcast the employee1 reference back to its original type Engineer.
+      // Save the result of the downcast in a variable of type Engineer named engineer1.
+      Engineer engineer1 = employee1 as Engineer;
+
+      if (engineer1 != null)
+      {
+        engineer1.SubmitDailyReport();
+      }
+      else
+      {
+        Console.WriteLine("downcast failed.");
+      }
+
+      Break();
+
       // Placeholder for list of employees
 
+      // 11. Create a list of Employee objects 
+      List <Employee> employees = new List<Employee>();
+
+      // 11. Add the Employee-compatible variables
+      employees.Add(employee1);
+      employees.Add(employee2);
+      employees.Add(employee3);
+
+      Console.WriteLine(employees);
+      foreach ( var  item in employees)
+            {
+                Console.WriteLine(item.GetType().Name);
+                Console.WriteLine("------------------------------");
+            }
+
+      foreach ( var employee in employees)
+      {
+
+        if (employee is Engineer)
+                {
+                    Console.WriteLine("This is an Engineer.");
+                } else if (employee is Manager)
+                { Console.WriteLine("This is an Manager");} 
+                else if (employee is Intern) {Console.WriteLine("This is an Intern");}
+        employee.ClockIn();
+        employee.Work();
+        employee.SubmitDailyReport();
+        Break();
+
+      }
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
       // Placeholder for adding employees to the list
+
+    }
+    public static void Break()
+    {
+      Console.WriteLine(new string('_', 30));
     }
   }
 }
