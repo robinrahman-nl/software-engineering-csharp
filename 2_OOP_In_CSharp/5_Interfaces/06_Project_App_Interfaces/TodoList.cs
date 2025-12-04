@@ -1,9 +1,11 @@
 using System;
 
-namespace SavingInterface
+namespace SavingInterface 
 {
-  class TodoList
+  class TodoList : IDisplayable, IResetable
   {
+    public string HeaderSymbol { get { return "_";} }
+
     // Property: with getter and setter
     public string[] Todos
     { get; private set; }
@@ -11,7 +13,7 @@ namespace SavingInterface
     // Field: For using inside the class 
     private int nextOpenIndex;
 
-    // Constructor: external classes can add value to this classes properties and so too the fields. 
+    // Constructor: external classes can add value to this classes properties 
     public TodoList()
     {
       Todos = new string[5];
@@ -24,5 +26,23 @@ namespace SavingInterface
       Todos[nextOpenIndex] = todo;
       nextOpenIndex++;
     }
+
+    // 5. The class must actually implement the interface by defining a Display() method.
+    public void Display()
+
+
+    {
+
+      foreach (var item in Todos)
+      {
+        Console.WriteLine(item);
+      }
+    }
+
+    public void Reset()
+        {
+            Todos = new string[5];
+            nextOpenIndex = 0;
+        }
   }
 }
