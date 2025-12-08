@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8_Project_Escape_Room_Adventure", "8_Project_Escape_Room_Adventure.csproj", "{DF4F6771-CFFD-807C-C686-839E6F7848CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4F6771-CFFD-807C-C686-839E6F7848CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4F6771-CFFD-807C-C686-839E6F7848CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4F6771-CFFD-807C-C686-839E6F7848CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4F6771-CFFD-807C-C686-839E6F7848CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {950FEB58-A6E5-4115-9A6A-D47399967A86}
+	EndGlobalSection
+EndGlobal
