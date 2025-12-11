@@ -1,18 +1,7 @@
-﻿using System;
+﻿/*
+the inheritance diagram in the workspace illustrates how every type ultimately inherits from Object:
 
-namespace TheObjectClass
-{
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      Book bk = new Book();
-      
-      Novel nl = new Novel(38);
-      
-      int i = 9;
-      
+Random and Forest inherit directly from Object
+Novel and Encyclopedia inherit from Book, which inherits from Object
+*/
 
-    }
-  }
-}

@@ -1,4 +1,4 @@
-// namespace TheObjectClass
+namespace TheObjectClass
 {
   class Book
   {
@@ -17,6 +17,11 @@
     public virtual string Stringify()
     {
       return "This is a Book object!";
+    }
+  	
+    public override string ToString()
+    {
+      return $"This Book is {Title}, by {Author}.";
     }
   }
 }
