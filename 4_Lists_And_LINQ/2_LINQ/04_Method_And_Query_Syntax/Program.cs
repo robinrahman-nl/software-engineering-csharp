@@ -40,25 +40,31 @@ namespace LearnLinq
   {
     static void Main()
     {
+      // 1. 
+      // Read the two queries in Program.cs. Each one returns a sequence of phrases, 
+      // one for each hero name that contains an ‘a’. Run the code to see the output.
+
+      // The queries return the same output, but they are written with different syntax. 
+      // Which seems easier to read to you?
       string[] heroes = { "Zoe", "Liam", "Taryn", "Dorian", "Everett", "Marlena" };
 
       // Query syntax
       var queryResult = from x in heroes
                         where x.Contains("a")
                         select $"{x} contains an 'a'";
-      
+
       // Method syntax
       var methodResult = heroes
         .Where(x => x.Contains("a"))
         .Select(x => $"{x} contains an 'a'");
-     
+
       // Printing...
       Console.WriteLine("queryResult:");
       foreach (string s in queryResult)
       {
         Console.WriteLine(s);
       }
-      
+
       Console.WriteLine("\nmethodResult:");
       foreach (string s in methodResult)
       {
